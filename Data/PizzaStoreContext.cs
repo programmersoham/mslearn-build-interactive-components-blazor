@@ -5,11 +5,11 @@ public sealed class PizzaStoreContext(DbContextOptions options)
 {
     public DbSet<Order> Orders => Set<Order>();
 
-    public DbSet<Pizza> Pizzas => Set<Pizza>();
+    // public DbSet<Pizza> Pizzas => Set<Pizza>();
 
     public DbSet<PizzaSpecial> Specials => Set<PizzaSpecial>();
 
-    public DbSet<Topping> Toppings => Set<Topping>();
+    // public DbSet<Topping> Toppings => Set<Topping>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
